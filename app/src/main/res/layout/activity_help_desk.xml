@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leaf"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:id="@+id/tabelaNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lojas POLO ZERO"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabelaNome"
+                android:layout_marginTop="1dp"
+                android:text="Siga pelo gps."
+                android:textColor="#82c5f2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logo_android" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="390dp"
+                android:layout_height="209dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loja1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.036"
+            />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnail"
+                android:maxLines="3"
+                android:text="Loja 1 - Lisboa"
+                android:textColor="#222"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:maxLines="3"
+                android:text="Lisboa
+Rua Conde de Sabugosa, 27-A "
+                android:textColor="#666"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.44" />
+
+            <!-- btn que segue para a loja 1 -->
+            <Button
+                android:id="@+id/btnLoja1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="-48dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/background_signup"
+                android:text="GPS 1"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.816"
+                app:layout_constraintStart_toStartOf="@+id/title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.411" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:id="@+id/thumbnail2"
+                android:layout_width="395dp"
+                android:layout_height="211dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loja2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.79" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnail2"
+                android:maxLines="3"
+                android:text="Loja 2 - Camarate"
+                android:textColor="#222"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.93" />
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_marginTop="0dp"
+                android:maxLines="4"
+                android:text="Quinta de Santa Rosa,
+Rua Particular - Armazém 5 "
+                android:textColor="#666"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.44" />
+
+            <!-- btn que segue para o gps 2 -->
+            <Button
+                android:id="@+id/btnLoja2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="-48dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/background_signup"
+                android:text="GPS 2"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.816"
+                app:layout_constraintStart_toStartOf="@+id/title2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.411" />
+        </RelativeLayout>
+<!-- AdMob MainBanner -->
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6960646842869845/9807901905" />
+         </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context="com.polozero.polozeroapp.RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Registo"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:hint="Nome"
+        android:textColorHint="#fff"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawablePadding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="#fff"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textCursorDrawable="@drawable/edittext_cursor"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+    <EditText
+        android:id="@+id/etUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:hint="Password"
+        android:textColorHint="#fff"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:textCursorDrawable="@drawable/edittext_cursor"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_login"
+        android:textColor="#002770"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Registar" />
+
+            <TextView
+                android:id="@+id/tvUserLoginTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:text="Já tem uma conta?"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/tvUserLogin"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/background_signup"
+                android:gravity="center"
+                android:text="ENTRAR"
+                android:textColor="#fff" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Polo Zero Lda."
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

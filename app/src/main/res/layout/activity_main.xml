@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="@drawable/new_login_gradients">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- Logo / Brand name -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="290dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="6dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logo_android"/>
+
+
+      <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:hint="E-mail"
+        android:textColorHint="#fff"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:textCursorDrawable="@drawable/edittext_cursor"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:hint="Password"
+        android:textColorHint="#fff"
+        android:maxLines="1"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:text="Entrar"
+                android:textColor="#002770"
+                android:textAllCaps="false"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_marginTop="24dp"
+                android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        android:clickable="true"
+        android:text="Nº de tentativas restantes: "
+        />
+            <TextView
+                android:layout_marginTop="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registe-se com uma conta nova."
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#fff"
+                android:clickable="true"/>
+    <Button
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_signup"
+        android:text="Registar"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:padding="6dp" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvForgotPassword"
+        android:text="Esqueceu-se da palavra-passe?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        android:clickable="true"
+        android:layout_marginTop="35dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@drawable/leaf"
+android:layout_height="match_parent"
+android:paddingLeft="18dp"
+android:paddingRight="18dp"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp">
+        <TextView
+            android:id="@+id/tabelaNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi-Split Mural"
+            android:textSize="22sp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/tabelaNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Série Doméstica"
+            android:textSize="14sp"
+            android:textColor="#82c5f2" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo_android"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSerieXA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+                <ImageView
+                    android:src="@drawable/xa"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:layout_below="@id/tabelaNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Série XA"
+                    android:textSize="17sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSerieXC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+                <ImageView
+                    android:src="@drawable/xc"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:layout_below="@id/tabelaNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Série XC"
+                    android:textSize="17sp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSerieSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+                <ImageView
+                    android:src="@drawable/xb"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tabelaNome"
+                    android:text="Série XB"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSeriePE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+                <ImageView
+                    android:src="@drawable/pe"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:layout_below="@id/tabelaNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Série PE"
+                    android:textSize="17sp"
+                    android:textColor="#000" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </GridLayout>
+</LinearLayout>
+</ScrollView>

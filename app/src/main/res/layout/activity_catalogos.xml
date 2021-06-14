@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/leaf"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="32dp">
+                        <TextView
+                            android:id="@+id/tabelaNome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Catálogos AC"
+                            android:textSize="22sp"
+                            android:textColor="#ffffff" />
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:layout_below="@id/tabelaNome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Download num click!"
+                            android:textSize="14sp"
+                            android:textColor="#82c5f2" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/logo_android"
+                            android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <GridLayout
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnPolozeroPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/logo_android"
+                                            android:layout_width="700dp"
+                                            android:layout_height="70dp" />
+
+                                        <TextView
+                                            android:layout_width="212dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Catálogo Polo Zero 2020"
+                                            android:textColor="#6F6F6F"
+                                            android:textSize="18sp" />
+                                </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                </GridLayout>
+
+
+
+                <GridLayout
+                    android:columnCount="2"
+                    android:rowCount="3"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnSamsungPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/samsung"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnDaikinPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/daikin"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+
+                                </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnDaitsuPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/daitsu"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+
+                                </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnLgPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/lg"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnFujitsuPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/fujitsu"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnMitsubishiPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/mitsubishi2"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnHtwPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/htwlogo"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnGaserveiPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/gasserveilogo"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnGiatsuPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/giatsu"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnModulRackPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/modulrack"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnTestoPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/testo2"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnKaimannPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/kaimann"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnZanottiPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/zanotti"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnBoxColdPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/boxcold"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btnSupplygas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:gravity="center">
+                                        <ImageView
+                                            android:src="@drawable/supplygas"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <!-- ADMOB Banner de anuncios  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/adView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            ads:adSize="BANNER"
+                            ads:adUnitId="ca-app-pub-6960646842869845/6422820507" />
+
+                </RelativeLayout>
+        </LinearLayout>
+</ScrollView>

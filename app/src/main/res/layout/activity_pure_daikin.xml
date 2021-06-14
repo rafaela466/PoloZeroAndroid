@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/leaf"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnMck57j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/mck75j" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tabelaNome"
+                        android:text="MCK75J"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tabelaNome"
+                        android:text="››Humidifica a partir do depósito incorporado de 4 litros de água
+››Tecnologia Flash Streamer da Daikin: purificação do ar de alta potência
+››Caudal de ar grande: 450m³/h em modo turbo
+››Tão silencioso como o murmurinho das folhas
+››Certificação TÜV"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnMc70l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/mc77" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tabelaNome"
+                        android:text="MC70L"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tabelaNome"
+                        android:text="››O avançado sistema de purificação de ar, através da tecnologia Streamer da Daikin, aumenta a qualidade do ar interior
+››Elevado caudal de ar: 420m³/h em modo turbo
+››Funcionamento silencioso: até 16dBA de nível de pressão sonora
+››Leve e compacta
+››Painel plano fácil de limpar"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
