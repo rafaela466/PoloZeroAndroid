@@ -16,7 +16,7 @@ import com.google.android.gms.ads.MobileAds;
 
 public class Precos extends AppCompatActivity implements View.OnClickListener {
      PDFView pdfView;
-     private CardView btnNavToSamsung,btnNavToDaikin,btnNavToDaitsu,btnNavToLG,btnNavToFujitsu,btnNavToMitsubishi,btnNavToTesto,btnNavToPolozero,btnNavToHtw, btnNavToGiatsu, btnNavToGaservei,btnNavToModulo,btnNavToDanfoss;
+     private CardView btnNavToSamsung,btnNavToDaikin,btnNavToDaitsu,btnNavToLG,btnNavToFujitsu,btnNavToMitsubishi,btnNavToTesto,btnNavToPolozero,btnNavToHtw, btnNavToGiatsu, btnNavToGaservei,btnNavToModulo,btnNavToDanfoss,btnNavToToyotomi;
     private AdView mAdView;
 
     @Override
@@ -43,6 +43,7 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
         btnNavToGaservei = (CardView)findViewById(R.id.btnGaserveiPrice);
         btnNavToModulo = (CardView)findViewById(R.id.btnModulRaPrice);
         btnNavToDanfoss = (CardView)findViewById(R.id.btnDanfossPrice);
+        btnNavToToyotomi = (CardView)findViewById(R.id.btnToyotomiPrice);
 
         btnNavToHtw.setOnClickListener(this);
         btnNavToPolozero.setOnClickListener(this);
@@ -57,6 +58,7 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
         btnNavToGaservei.setOnClickListener(this);
         btnNavToModulo.setOnClickListener(this);
         btnNavToDanfoss.setOnClickListener(this);
+        btnNavToToyotomi.setOnClickListener(this);
     }
 
     // Tabelas de preços PDF's
@@ -71,21 +73,21 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
             switch(view.getId()){
                 case R.id.btnPolozeroPrice:  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/CatálogoGeralPoloZero2020.pdf"));
                     startActivity(browserIntent); break;
-                case R.id.btnSamsungPrice :  Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1gr6GKA5AfwohwNazMQfI22YvoPiSUIO5/view?usp=sharing"));
+                case R.id.btnSamsungPrice :  Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/Tabela-Precos2021Final.pdf"));
                     startActivity(browserIntent1); break;
-                case R.id.btnDaikinPrice : Intent browserIntent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/04/Tabela-de-Preços_2020_Revendedores_Web1.pdf"));
+                case R.id.btnDaikinPrice : Intent browserIntent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/04/DAIKIN-Tabela-de-Preços-2021_REV.pdf"));
                     startActivity(browserIntent2); break;
                 case R.id.btnDaitsuPrice : Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/01/Tabela_Daitsu_Profissional_2020-editado2.pdf"));
                     startActivity(browserIntent3); break;
-                case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/LG_2020.pdf"));
+                case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/05/TabelaLG2021.pdf"));
                     startActivity(browserIntent4); break;
                 case R.id.btnFujitsuPrice: Intent browserIntent5 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/03/©-Tabela_Fujitsu_Climatização_2020_V2-desbloqueado.pdf"));
                     startActivity(browserIntent5); break;
-                case R.id.btnMitsubishiPrice: Intent browserIntent6 = new Intent(Intent.ACTION_VIEW,Uri.parse("https://polozero.com/wp-content/uploads/2020/05/Tabela-de-Preços-2020.pdf"));
+                case R.id.btnMitsubishiPrice: Intent browserIntent6 = new Intent(Intent.ACTION_VIEW,Uri.parse("https://polozero.com/wp-content/uploads/2021/05/Mitsubishi-tabela-precos2021.pdf"));
                     startActivity(browserIntent6); break;
-                case R.id.btnTestoPrice: Intent browserIntent8 = new Intent(Intent.ACTION_VIEW,Uri.parse("https://drive.google.com/file/d/1iVhnRvQCRUsJRwoBxsCn7Xs7Uda1pzH0/view?usp=sharing"));
+                case R.id.btnTestoPrice: Intent browserIntent8 = new Intent(Intent.ACTION_VIEW,Uri.parse("https://polozero.com/wp-content/uploads/2021/01/Catalogo-testo2021.pdf"));
                     startActivity(browserIntent8); break;
-                case R.id.btnHtwPrice:  Intent browserIntent9 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/TARIFA-HTW-2020-PORT.pdf"));
+                case R.id.btnHtwPrice:  Intent browserIntent9 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/HTW_TabelaDePreços_2021.pdf"));
                     startActivity(browserIntent9); break;
                 case R.id.btnGiatsuPrice: Intent browserIntent10 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1OMvj6HAD15GZGLJIn3X4570v7DYX5k5t/view?usp=sharing"));
                     startActivity(browserIntent10); break;
@@ -93,8 +95,10 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
                     startActivity(browserIntent12); break;
                 case R.id.btnModulRaPrice: Intent browserIntent99= new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/Catalogo_Modulrack.pdf"));
                     startActivity(browserIntent99); break;
-                case R.id.btnDanfossPrice: Intent browserIntent14 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1JdMNHlpjxfSFptsZCrSEmMErTkh6i8qk/view?usp=sharing"));
+                case R.id.btnDanfossPrice: Intent browserIntent14 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/02/Danfoss2.pdf"));
                     startActivity(browserIntent14); break;
+                case R.id.btnToyotomiPrice: Intent browserIntent15 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/02/Toyotomi2021_tp.pdf"));
+                    startActivity(browserIntent15); break;
                 default:break;
             }
         }

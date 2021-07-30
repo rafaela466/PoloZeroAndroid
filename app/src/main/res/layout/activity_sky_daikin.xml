@@ -55,13 +55,6 @@
                         android:textSize="14sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
         </GridLayout>
     </LinearLayout>
 </ScrollView>

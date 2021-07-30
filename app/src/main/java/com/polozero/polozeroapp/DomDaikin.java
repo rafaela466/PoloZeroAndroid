@@ -13,7 +13,7 @@ public class DomDaikin extends AppCompatActivity implements View.OnClickListener
         PDFView pdfView;
         private CardView btnNavToUruru,btnNavToEmura,btnNavToPerfera,
                 btnNavToComfora,btnNavToSensira,btnNavToBaixoDaikin,btnNavToChaoDaikin,
-                btnNavToNexura,btnNavToChaoTetoDaikin;
+                btnNavToNexura,btnNavToChaoTetoDaikin,btnNavToGeral;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,9 @@ public class DomDaikin extends AppCompatActivity implements View.OnClickListener
         btnNavToChaoDaikin = (CardView) findViewById(R.id.btnChaoDaikin);
         btnNavToNexura = (CardView) findViewById(R.id.btnNexura);
         btnNavToChaoTetoDaikin = (CardView) findViewById(R.id.btnChaoTetoDaikin);
+        btnNavToGeral = (CardView) findViewById(R.id.btnGeralDaikin);
 
+        btnNavToGeral.setOnClickListener(this);
         btnNavToUruru.setOnClickListener(this);
         btnNavToEmura.setOnClickListener(this);
 
@@ -49,7 +51,7 @@ public class DomDaikin extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent); break;
             case R.id.btnEmura:Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2019/12/DAPT16-041_FTXJ-M_Emura_R-32.pdf"));
                 startActivity(browserIntent1); break;
-            case R.id.btnPerfera:Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1tfu3TUCnxV5yfR3bGH4ncssIc_04MssK/view?usp=sharing"));
+            case R.id.btnPerfera:Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/01/Perfera2021.pdf"));
                 startActivity(browserIntent3); break;
             case R.id.btnComfora:Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2019/12/ECPPT18-046-Unidade-mural-Comfora_FTXP-L.pdf"));
                 startActivity(browserIntent4); break;
@@ -63,6 +65,8 @@ public class DomDaikin extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent8); break;
             case R.id.btnChaoTetoDaikin:Intent browserIntent9 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2019/12/ECPPT15-030_FLXS-B9_Chao_Teto.pdf"));
                 startActivity(browserIntent9); break;
+            case R.id.btnGeralDaikin:Intent browserIntent10 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/Catálogo-Geral-2020.pdf"));
+                startActivity(browserIntent10); break;
             default:break;
         }
     }

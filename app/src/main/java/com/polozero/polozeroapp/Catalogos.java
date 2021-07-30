@@ -14,7 +14,7 @@ import com.google.android.gms.ads.MobileAds;
 
 public class Catalogos extends AppCompatActivity implements View.OnClickListener {
     PDFView pdfView;
-    private CardView btnNavToSamsung,btnNavToDaikin,btnNavToDaitsu,btnNavToLG,btnNavToFujitsu,btnNavToMitsubishi,btnNavToTesto,btnNavToPolozero,btnNavToHtw,btnNavToGiatsu,btnNavToGaservei,btnNavToModul,btnNavToKaimann,btnNavToZanotti,btnNavToBoxcold,btnNavToSupply;
+    private CardView btnNavToSamsung,btnNavToDaikin,btnNavToDaitsu,btnNavToWigam,btnNavToLG,btnNavToFujitsu,btnNavToMitsubishi,btnNavToTesto,btnNavToPolozero,btnNavToHtw,btnNavToGiatsu,btnNavToGaservei,btnNavToModul,btnNavToKaimann,btnNavToZanotti,btnNavToBoxcold,btnNavToSupply, btnNavToToyotomiCat;
     private AdView mAdView;
 
     @Override
@@ -44,6 +44,8 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
         btnNavToGiatsu = (CardView)findViewById(R.id.btnGiatsuPrice);
         btnNavToGaservei = (CardView)findViewById(R.id.btnGaserveiPrice);
         btnNavToModul = (CardView)findViewById(R.id.btnModulRackPrice);
+        btnNavToToyotomiCat = (CardView)findViewById(R.id.btnToyotomiCat);
+        btnNavToWigam = (CardView)findViewById(R.id.btnWigam);
 
 
         btnNavToGiatsu.setOnClickListener(this);
@@ -62,6 +64,8 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
         btnNavToTesto.setOnClickListener(this);
         btnNavToGaservei.setOnClickListener(this);
         btnNavToModul.setOnClickListener(this);
+        btnNavToToyotomiCat.setOnClickListener(this);
+        btnNavToWigam.setOnClickListener(this);
 
         btnNavToSamsung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,11 +107,11 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent); break;
             case R.id.btnDaitsuPrice : Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/05/DAITSU_2020-editado.pdf"));
                 startActivity(browserIntent3); break;
-            case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/07/TABELA-LG-2020_JULHO_WEB.pdf"));
+            case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/05/TabelaLG2021.pdf"));
                 startActivity(browserIntent4); break;
             case R.id.btnFujitsuPrice: Intent browserIntent5 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/03/©-Tabela_Fujitsu_Climatização_2020_V2-desbloqueado.pdf"));
                 startActivity(browserIntent5); break;
-            case R.id.btnTestoPrice: Intent browserIntent8 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1iVhnRvQCRUsJRwoBxsCn7Xs7Uda1pzH0/view?usp=sharing"));
+            case R.id.btnTestoPrice: Intent browserIntent8 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/01/Catalogo-testo2021.pdf"));
                 startActivity(browserIntent8); break;
             case R.id.btnGiatsuPrice: Intent browserIntent10 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1OMvj6HAD15GZGLJIn3X4570v7DYX5k5t/view?usp=sharing"));
                 startActivity(browserIntent10); break;
@@ -123,6 +127,10 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent71); break;
             case R.id.btnSupplygas: Intent browserIntent110 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2019/12/importsuply.pdf"));
                 startActivity(browserIntent110);
+            case R.id.btnToyotomiCat: Intent browserIntent199 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/08/TOYOTOMI-Catálogo-Geral.pdf"));
+                startActivity(browserIntent199);
+            case R.id.btnWigam: Intent browserIntent198 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/Wigam2021.pdf"));
+                startActivity(browserIntent198);
             default:break;
         }
     }

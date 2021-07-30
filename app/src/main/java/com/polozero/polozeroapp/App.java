@@ -26,7 +26,7 @@ public class App extends Application {
         // set in-app defaults
                 Map<String, Object> remoteConfigDefaults = new HashMap();
         remoteConfigDefaults.put(ForceUpdateChecker.KEY_UPDATE_REQUIRED, true);
-        remoteConfigDefaults.put(ForceUpdateChecker.KEY_CURRENT_VERSION, "2.5.2");
+        remoteConfigDefaults.put(ForceUpdateChecker.KEY_CURRENT_VERSION, "2.6");
         remoteConfigDefaults.put(ForceUpdateChecker.KEY_UPDATE_URL,
                 "https://play.google.com/store/apps/details?id=com.polozero.polozeroapp");
 

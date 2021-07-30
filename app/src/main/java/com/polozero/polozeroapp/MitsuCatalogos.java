@@ -45,7 +45,7 @@ public class MitsuCatalogos extends AppCompatActivity implements View.OnClickLis
         public void onClick(View view) {
             Intent i;
             switch(view.getId()){
-                case R.id.btnAquecimento:Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/05/Tabela-de-Preços-Aquecimento-2020.pdf"));
+                case R.id.btnAquecimento:Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/02/Tabela-de-Preços-Aquecimento-2021.pdf"));
                     startActivity(browserIntent1); break;
                 case R.id.btnPLA:Intent browserIntent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/05/SériePLA-1.pdf"));
                     startActivity(browserIntent2); break;
