@@ -23,7 +23,7 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_catalogos);
 
         //AdRequest on Builder (can't get device ID)
-        MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
+      //  MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -97,7 +97,6 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
     }
 
    //Só a ATUALIZAR a APP é que os PDF'S ficam ONLINE
-
     @Override
     public void onClick(View view) {
         Intent i;
@@ -121,7 +120,7 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent99); break;
             case R.id.btnKaimannPrice: Intent browserIntent77 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2019/12/KAIMAN.pdf"));
                 startActivity(browserIntent77); break;
-            case R.id.btnZanottiPrice: Intent browserIntent76 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/Zanotti2019.pdf"));
+            case R.id.btnZanottiPrice: Intent browserIntent76 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/08/ZANOTTI-tabeladeprecos-2021.pdf"));
                 startActivity(browserIntent76); break;
             case R.id.btnBoxColdPrice: Intent browserIntent71 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/BOXCOLD.pdf"));
                 startActivity(browserIntent71); break;

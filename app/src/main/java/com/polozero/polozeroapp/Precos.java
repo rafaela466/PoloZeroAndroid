@@ -25,7 +25,7 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_precos);
 
         //AdRequest on Builder (can't get device ID)
-        MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
+   //     MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -73,9 +73,9 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
             switch(view.getId()){
                 case R.id.btnPolozeroPrice:  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/02/CatálogoGeralPoloZero2020.pdf"));
                     startActivity(browserIntent); break;
-                case R.id.btnSamsungPrice :  Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/Tabela-Precos2021Final.pdf"));
+                case R.id.btnSamsungPrice :  Intent browserIntent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/08/Samsung-Tabela-Precos-2021_Setembro_LR.pdf"));
                     startActivity(browserIntent1); break;
-                case R.id.btnDaikinPrice : Intent browserIntent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/04/DAIKIN-Tabela-de-Preços-2021_REV.pdf"));
+                case R.id.btnDaikinPrice : Intent browserIntent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/08/DAIKIN-Tabela-de-Precos-2021-V2.pdf"));
                     startActivity(browserIntent2); break;
                 case R.id.btnDaitsuPrice : Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/01/Tabela_Daitsu_Profissional_2020-editado2.pdf"));
                     startActivity(browserIntent3); break;
@@ -97,7 +97,7 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
                     startActivity(browserIntent99); break;
                 case R.id.btnDanfossPrice: Intent browserIntent14 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/02/Danfoss2.pdf"));
                     startActivity(browserIntent14); break;
-                case R.id.btnToyotomiPrice: Intent browserIntent15 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/02/Toyotomi2021_tp.pdf"));
+                case R.id.btnToyotomiPrice: Intent browserIntent15 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/08/Toyotomi_Setembro_2021.pdf"));
                     startActivity(browserIntent15); break;
                 default:break;
             }

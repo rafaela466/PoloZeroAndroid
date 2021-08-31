@@ -20,7 +20,7 @@ public class HelpDesk extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_desk);
         //AdRequest on Builder (can't get device ID)
-        MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
+       // MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
