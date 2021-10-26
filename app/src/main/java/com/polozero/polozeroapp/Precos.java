@@ -24,8 +24,8 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_precos);
 
-        //AdRequest on Builder (can't get device ID)
-   //     MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
+   //   AdRequest on Builder (can't get device ID)
+   //   MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -87,7 +87,7 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
                     startActivity(browserIntent6); break;
                 case R.id.btnTestoPrice: Intent browserIntent8 = new Intent(Intent.ACTION_VIEW,Uri.parse("https://polozero.com/wp-content/uploads/2021/01/Catalogo-testo2021.pdf"));
                     startActivity(browserIntent8); break;
-                case R.id.btnHtwPrice:  Intent browserIntent9 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/HTW_TabelaDePreços_2021.pdf"));
+                case R.id.btnHtwPrice:  Intent browserIntent9 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/10/HTW-OUTUBRO.pdf"));
                     startActivity(browserIntent9); break;
                 case R.id.btnGiatsuPrice: Intent browserIntent10 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1OMvj6HAD15GZGLJIn3X4570v7DYX5k5t/view?usp=sharing"));
                     startActivity(browserIntent10); break;

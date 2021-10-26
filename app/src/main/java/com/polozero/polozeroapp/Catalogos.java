@@ -23,7 +23,7 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_catalogos);
 
         //AdRequest on Builder (can't get device ID)
-      //  MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
+        //  MobileAds.initialize(this, "ca-app-pub-6960646842869845~6092978636");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -96,7 +96,8 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
         });
     }
 
-   //Só a ATUALIZAR a APP é que os PDF'S ficam ONLINE
+   // Update catalogs - Update the app
+
     @Override
     public void onClick(View view) {
         Intent i;
