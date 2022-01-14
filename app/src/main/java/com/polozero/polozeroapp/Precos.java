@@ -61,11 +61,6 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
         btnNavToToyotomi.setOnClickListener(this);
     }
 
-    // Tabelas de preços PDF's
-    // Só se ATUALIZAR a APP é que os PDF's ficam ONLINE
-    //
-
-
     @Override
         public void onClick(View view) {
             Intent i;
@@ -77,7 +72,7 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
                     startActivity(browserIntent1); break;
                 case R.id.btnDaikinPrice : Intent browserIntent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/08/DAIKIN-Tabela-de-Precos-2021-V2.pdf"));
                     startActivity(browserIntent2); break;
-                case R.id.btnDaitsuPrice : Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/01/Tabela_Daitsu_Profissional_2020-editado2.pdf"));
+                case R.id.btnDaitsuPrice : Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2022/01/TP_DaitsuAumento2020.pdf"));
                     startActivity(browserIntent3); break;
                 case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/05/TabelaLG2021.pdf"));
                     startActivity(browserIntent4); break;
@@ -102,5 +97,4 @@ public class Precos extends AppCompatActivity implements View.OnClickListener {
                 default:break;
             }
         }
-
 }

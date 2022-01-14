@@ -139,11 +139,12 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
 
     }
 
+    // Change this everytime I update 
     @Override
     public void onUpdateNeeded(final String updateUrl) {
         AlertDialog dialog = new AlertDialog.Builder(this)
-                .setTitle("Atualização de junho 2020")
-                .setMessage("Novas tabela de preços e catálogos! Atualize a sua aplicação.") // Update de Junho
+                .setTitle("Atualize a sua aplicação.")
+                .setMessage("Novas tabelas de preços e catálogos de 2022!") // Update de 14 janeiro 2022
                 .setPositiveButton("Atualizar",
                         new DialogInterface.OnClickListener() {
                             @Override
@@ -192,12 +193,12 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
         });
     }
 
-        //Se não verificou o e-mail vai aparecer um aviso em baixo do login
+    // If the email is not verified it's going to appear a warning below the login
     private void checkEmailVerification() {
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
         Boolean emailflag = firebaseUser.isEmailVerified();
-       //startActivity(new Intent(MainActivity.this, SecondActivity.class));
 
+        //startActivity(new Intent(MainActivity.this, SecondActivity.class));
         if (emailflag) {
             finish();
             startActivity(new Intent(MainActivity.this, SecondActivity.class));
@@ -206,5 +207,4 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
             firebaseAuth.signOut();
         }
     }
-
 }

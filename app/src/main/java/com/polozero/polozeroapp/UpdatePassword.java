@@ -46,7 +46,7 @@ public class UpdatePassword extends AppCompatActivity {
                             Toast.makeText(UpdatePassword.this, "Password alterada.", Toast.LENGTH_SHORT).show();
                             finish();
                         }else{
-                            Toast.makeText(UpdatePassword.this, "Alteração da password falhada.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(UpdatePassword.this, "Falha na alteração.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

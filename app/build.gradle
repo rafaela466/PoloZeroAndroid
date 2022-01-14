@@ -3,14 +3,18 @@ apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core:1.6.0' }
+        }
         applicationId "com.polozero.polozeroapp"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion 17
+        targetSdkVersion 31
         multiDexEnabled true
-        versionCode 21
-        versionName "2.7"
+        versionCode 25
+        versionName "2.8.1"
+        buildToolsVersion "30.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -23,7 +27,7 @@ android {
             sourceCompatibility 1.8
             targetCompatibility 1.8
         }
-}//gs bbh
+}
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
@@ -59,6 +63,6 @@ dependencies {
 
 apply plugin: 'com.google.gms.google-services'
 repositories {
-    maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+   // maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     mavenCentral()
 }

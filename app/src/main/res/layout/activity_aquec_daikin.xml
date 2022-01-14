@@ -41,9 +41,9 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:layout_width="340dp"
+                            android:layout_width="300dp"
                             android:layout_height="300dp"
-                            android:src="@drawable/aquecimentodaikin" />
+                            android:src="@drawable/daikinaquec" />
 
                         <TextView
                             android:layout_width="wrap_content"
