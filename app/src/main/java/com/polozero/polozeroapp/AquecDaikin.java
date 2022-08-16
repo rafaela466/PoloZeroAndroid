@@ -26,7 +26,7 @@ public class AquecDaikin extends AppCompatActivity implements View.OnClickListen
     public void onClick(View view) {
         Intent i;
         switch(view.getId()){
-            case R.id.btnAquecimentoDaikin:Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2021/03/DAIKIN-Catálogo-de-Aquecimento-2020_21_V09_20.pdf"));
+            case R.id.btnAquecimentoDaikin:Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2022/08/daikin_catalogo_2022.pdf"));
                 startActivity(browserIntent); break;
             default:break;
         }

@@ -107,7 +107,7 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent); break;
             case R.id.btnDaitsuPrice : Intent browserIntent3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/05/DAITSU_2020-editado.pdf"));
                 startActivity(browserIntent3); break;
-            case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2022/01/lg2022.pdf"));
+            case R.id.btnLgPrice: Intent browserIntent4 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2022/07/tabela_lg_julho.pdf"));
                 startActivity(browserIntent4); break;
             case R.id.btnFujitsuPrice: Intent browserIntent5 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/03/©-Tabela_Fujitsu_Climatização_2020_V2-desbloqueado.pdf"));
                 startActivity(browserIntent5); break;
@@ -127,7 +127,7 @@ public class Catalogos extends AppCompatActivity implements View.OnClickListener
                 startActivity(browserIntent71); break;
             case R.id.btnSupplygas: Intent browserIntent110 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2019/12/importsuply.pdf"));
                 startActivity(browserIntent110);
-            case R.id.btnToyotomiCat: Intent browserIntent199 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2020/08/TOYOTOMI-Catálogo-Geral.pdf"));
+            case R.id.btnToyotomiCat: Intent browserIntent199 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2022/06/TOYOTOMI_Geral_2022.pdf"));
                 startActivity(browserIntent199);
             case R.id.btnWigam: Intent browserIntent198 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://polozero.com/wp-content/uploads/2022/01/wigam2022.pdf"));
                 startActivity(browserIntent198);

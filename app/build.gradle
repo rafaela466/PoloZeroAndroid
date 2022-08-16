@@ -3,17 +3,18 @@ apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     defaultConfig {
         configurations.all {
             resolutionStrategy { force 'androidx.core:core:1.6.0' }
         }
+    //  LAST UPDATE - 16/08/2022 - V.35 (v.2.8.9)
         applicationId "com.polozero.polozeroapp"
-        minSdkVersion 17
-        targetSdkVersion 31
+        minSdkVersion 19
+        targetSdkVersion 33
         multiDexEnabled true
-        versionCode 25
-        versionName "2.8.1"
+        versionCode 35
+        versionName "2.8.9"
         buildToolsVersion "30.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -31,10 +32,10 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
-    implementation 'com.google.firebase:firebase-ads:20.2.0'
+    implementation 'com.google.firebase:firebase-ads:21.1.0'
     implementation 'com.android.support:support-annotations:28.0.0'
-    implementation 'com.google.firebase:firebase-messaging:22.0.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-messaging:23.0.7'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
         implementation 'androidx.appcompat:appcompat:1.0.0'
@@ -57,7 +58,7 @@ dependencies {
         implementation 'androidx.appcompat:appcompat:1.0.2'
         implementation 'com.android.support:multidex:1.0.3'
     })
-    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.core:core-ktx:1.9.0-beta01"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 

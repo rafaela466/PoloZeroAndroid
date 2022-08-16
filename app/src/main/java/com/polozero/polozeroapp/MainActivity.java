@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
     public void onUpdateNeeded(final String updateUrl) {
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("Atualize a sua aplicação.")
-                .setMessage("Novas tabelas de preços e catálogos de 2022!") // Update de 14 janeiro 2022
+                .setMessage("Novas tabelas de preços e catálogos!") // Update de 16 AGOSTO 2022
                 .setPositiveButton("Atualizar",
                         new DialogInterface.OnClickListener() {
                             @Override
